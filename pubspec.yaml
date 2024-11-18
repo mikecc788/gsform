@@ -25,12 +25,6 @@ dev_dependencies:
     sdk: flutter
 #  flutter_lints: ^2.0.1
 
-  qr_code_scanner:
-    git:
-      url: https://github.com/samnbd/qr_code_scanner
-      ref: master
-      version: ^1.0.0
-
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

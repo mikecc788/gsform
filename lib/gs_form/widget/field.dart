@@ -38,7 +38,6 @@ import 'package:gsform/gs_form/widget/fields/mobile_field.dart';
 import 'package:gsform/gs_form/widget/fields/number_field.dart';
 import 'package:gsform/gs_form/widget/fields/password_field.dart';
 import 'package:gsform/gs_form/widget/fields/price_field.dart';
-import 'package:gsform/gs_form/widget/fields/qr_scanner_field.dart';
 import 'package:gsform/gs_form/widget/fields/radio_group_field.dart';
 import 'package:gsform/gs_form/widget/fields/spinner_field.dart';
 import 'package:gsform/gs_form/widget/fields/text_field.dart';
@@ -952,9 +951,6 @@ class _GSFieldState extends State<GSField> {
         break;
       case GSFieldTypeEnum.imagePicker:
         widget.child = GSImagePickerField(widget.model as GSImagePickerModel, widget.formStyle!);
-        break;
-      case GSFieldTypeEnum.qrScanner:
-        widget.child = GSQRScannerField(widget.model as GSQRScannerModel, widget.formStyle!);
         break;
       case GSFieldTypeEnum.multiImagePicker:
         widget.child = GSMultiImagePickerField(widget.model as GSMultiImagePickerModel, widget.formStyle!);
