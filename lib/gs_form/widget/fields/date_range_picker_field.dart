@@ -134,15 +134,10 @@ class _GSDateRangePickerFieldState extends State<GSDateRangePickerField> {
 
   _openDateRangePicker() async {
     var picked = await showPersianDateRangePicker(
-      context: widget.context,
-      initialEntryMode: PDatePickerEntryMode.calendar,
-      initialDateRange: JalaliRange(
-        start: widget.jalaliInitialStartDate,
-        end: widget.jalaliInitialEndDate,
-      ),
-      firstDate: widget.jalaliAvailableFrom,
-      lastDate: widget.jalaliAvailableTo,
-    );
+        context: widget.context,
+        firstDate: widget.jalaliInitialStartDate,
+        lastDate: widget.jalaliInitialEndDate,
+        initialDate: Jalali.now(),initialEntryMode: PersianDatePickerEntryMode.calendar);
     if (picked?.start != null && picked?.end != null) {
       widget.selectedStartDate = picked?.start;
       widget.selectedEndDate = picked?.end;
@@ -239,7 +234,7 @@ class _GSDateRangePickerFieldState extends State<GSDateRangePickerField> {
     }
 
     if (widget.model.availableTo == null) {
-      widget.jalaliAvailableTo = Jalali.MAX;
+      widget.jalaliAvailableTo = Jalali.max;
     } else {
       widget.jalaliAvailableTo =
           Jalali(widget.model.availableTo!.year, widget.model.availableTo!.month, widget.model.availableTo!.day);
@@ -267,7 +262,7 @@ class _GSDateRangePickerFieldState extends State<GSDateRangePickerField> {
         widget.jalaliAvailableFrom = Jalali(
             widget.model.availableFrom!.year, widget.model.availableFrom!.month, widget.model.availableFrom!.day);
       } else {
-        widget.jalaliAvailableFrom = Jalali.MIN;
+        widget.jalaliAvailableFrom = Jalali.min;
       }
     } else {
       widget.jalaliAvailableFrom = widget.jalaliInitialStartDate;

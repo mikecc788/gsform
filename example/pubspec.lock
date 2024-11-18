@@ -187,34 +187,34 @@ packages:
     dependency: transitive
     description:
       name: image_cropper
-      sha256: f4bad5ed2dfff5a7ce0dfbad545b46a945c702bb6182a921488ef01ba7693111
+      sha256: fe37d9a129411486e0d93089b61bd326d05b89e78ad4981de54b560725bf5bd5
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "5.0.1"
+    version: "8.0.2"
   image_cropper_for_web:
     dependency: transitive
     description:
       name: image_cropper_for_web
-      sha256: "865d798b5c9d826f1185b32e5d0018c4183ddb77b7b82a931e1a06aa3b74974e"
+      sha256: "34256c8fb7fcb233251787c876bb37271744459b593a948a2db73caa323034d0"
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "3.0.0"
+    version: "6.0.2"
   image_cropper_platform_interface:
     dependency: transitive
     description:
       name: image_cropper_platform_interface
-      sha256: ee160d686422272aa306125f3b6fb1c1894d9b87a5e20ed33fa008e7285da11e
+      sha256: e8e9d2ca36360387aee39295ce49029362ae4df3071f23e8e71f2b81e40b7531
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "5.0.0"
+    version: "7.0.0"
   image_picker:
     dependency: transitive
     description:
       name: image_picker
-      sha256: b6951e25b795d053a6ba03af5f710069c99349de9341af95155d52665cb4607c
+      sha256: "021834d9c0c3de46bf0fe40341fa07168407f694d9b2bb18d532dc1261867f7a"
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "0.8.9"
+    version: "1.1.2"
   image_picker_android:
     dependency: transitive
     description:
@@ -279,14 +279,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "0.19.0"
-  js:
-    dependency: transitive
-    description:
-      name: js
-      sha256: f2c445dce49627136094980615a031419f7f3eb393237e4ecd97ac15dea343f3
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "0.6.7"
   leak_tracker:
     dependency: transitive
     description:
@@ -419,10 +411,10 @@ packages:
     dependency: transitive
     description:
       name: persian_datetime_picker
-      sha256: "097f69484a4ea8fdf8d2051b0b6205edbed912f096b3c521df0985f656ef5584"
+      sha256: "31062d69054abf161ae71d1b7a854f5fdf95a5eb18dc0a286ac0700a92a6f35e"
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "2.7.0"
+    version: "3.0.2"
   petitparser:
     dependency: transitive
     description:
@@ -447,6 +439,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.8"
+  shamsi_date:
+    dependency: transitive
+    description:
+      name: shamsi_date
+      sha256: "4614789ed11bfffe5ba0aa157a20f2857ab6328528401766e0d924e453c866bd"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "1.0.4"
   sky_engine:
     dependency: transitive
     description: flutter
